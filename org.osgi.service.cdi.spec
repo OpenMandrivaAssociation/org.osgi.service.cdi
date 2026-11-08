@@ -21,6 +21,8 @@ BuildRequires:	mvn(org.osgi:osgi.core)
 BuildRequires:	mvn(org.osgi:osgi.annotation)
 BuildRequires:	mvn(org.osgi:org.osgi.namespace.extender)
 BuildRequires:	mvn(org.osgi:org.osgi.namespace.implementation)
+# The Interceptors 1.2 POM still inherits org.jboss:jboss-parent:55.
+BuildRequires:	mvn(org.jboss:jboss-parent:pom::)
 BuildSystem:	maven
 BuildOption(install):	--file-name %{name}
 
